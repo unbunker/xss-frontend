@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unbunker - Admin panel</title>
+  </head>
+
+  <style>
+    #preloader {
+      width: 200px;
+      text-align: center;
+      margin-top: 43vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #pathOne {
+      fill: #383838;
+      animation: animateLogo 3s linear forwards infinite;
+    }
+  
+    #pathTwo {
+      animation: animateLogo 3s linear forwards infinite;
+    }
+  
+    @keyframes animateLogo {
+        0%, 100%   {
+          opacity: 0.1;
+        }
+        50%  {
+          opacity: 1;
+  
+        }
+    }
+  </style>
+  <script>
+
+    const loaderColor = '#FFFFFF'
+    const primaryColor = '#9155FD'
+
+    if (loaderColor)
+      document.documentElement.style.setProperty('--initial-loader-bg', loaderColor)
+
+    if (primaryColor)
+      document.documentElement.style.setProperty('--initial-loader-color', primaryColor)
+  </script>
+
+
+  <body>
+    <div id="app">
+      <div id="preloader">
+          <svg width="172" height="96" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 106 105" xml:space="preserve">
+       
+       <path id="pathOne"  class="path-animation" fill-rule="evenodd" clip-rule="evenodd" d="M24.3,76.8V36.8l28.3-16.2L81,36.8v32.3L52.6,85.3l-15-8.6V44.6l15-8.6l15,8.6v16.8l-15,8.6L51,69V52.3l8.4-4.8
+       l-6.7-3.8l-8.3,4.8v24.4l8.3,4.8l21.7-12.4V40.7L52.6,28.3L31,40.7v39.9L52.6,93l35-20V33l-35-20l-35,20v40L24.3,76.8z" fill="#454545"/>
+       </svg>
+       
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.border,
+.v-divider {
+    border-color: rgba(var(--v-border-color), 1) !important;
+}
+
+.v-list {
+  .v-list-item__prepend {
+    display: block;
+    padding-right: 12px;
+  }
+}
